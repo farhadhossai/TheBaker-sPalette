@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Baker's Palette | Premium Custom Cakes & Artisanal Desserts</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            goldHover: '#B59226',
+                            goldLight: '#FDF8E7',
+                            navy: '#0E1B2A',
+                            navyCard: '#162436',
+                            ivory: '#FAF7F2',
+                            ivoryCard: '#FFFFFF',
+                            rose: '#E8C5C8',
+                            brown: '#4A3525'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                        bangla: ['Hind Siliguri', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+            background-color: #FAF7F2;
+            color: #1A1A1A;
+        }
+        .font-header {
+            font-family: 'Cinzel', 'Hind Siliguri', serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #B8860B 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-navy text-brand-goldLight text-xs md:text-sm py-2 px-4 border-b border-brand-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-brand-gold text-brand-navy font-bold px-2 py-0.5 rounded text-[11px] font-cinzel">EST. 2026</span>
+                <span class="font-bangla">শিল্পীর ছোঁয়ায় তৈরি কাস্টমাইজড কেক ও ডেজার্ট 🎨🎂</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="https://wa.me/8801938713553" target="_blank" class="hover:text-brand-gold transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i> +880 01938-713553
+                </a>
+                <span class="text-brand-gold/40">|</span>
+                <a href="https://www.facebook.com/profile.php?id=61596091855209" target="_blank" class="hover:text-brand-gold transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-brands fa-facebook text-blue-400 text-sm"></i> Facebook Page
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-brand-ivory/95 backdrop-blur-md border-b border-brand-gold/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-brand-gold overflow-hidden shadow-md group-hover:scale-105 transition-transform bg-white p-0.5">
+                    <img src="Gemini_Generated_Image_dp6zjtdp6zjtdp6z.jpg" alt="The Baker's Palette Logo" class="w-full h-full object-cover rounded-full">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-cinzel text-lg md:text-2xl font-extrabold tracking-wider text-brand-navy group-hover:text-brand-gold transition-colors">THE BAKER'S PALETTE</span>
+                    <span class="text-[9px] md:text-[10px] tracking-[0.2em] text-brand-gold font-semibold uppercase -mt-1">Artisanal Bakery • Est. 2026</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-brand-navy">
+                <a href="#home" class="hover:text-brand-gold transition-colors">হোম (Home)</a>
+                <a href="#gallery" class="hover:text-brand-gold transition-colors">ডিজাইন গ্যালারি</a>
+                <a href="#calculator" class="hover:text-brand-gold transition-colors">কাস্টম অর্ডার ক্যালকুলেটর</a>
+                <a href="#why-us" class="hover:text-brand-gold transition-colors">কেন আমরা</a>
+                <a href="#contact" class="hover:text-brand-gold transition-colors">যোগাযোগ</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/8801938713553" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-md hover:shadow-lg transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> হোয়াটসঅ্যাপে অর্ডার
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61596091855209" target="_blank" class="bg-brand-navy hover:bg-brand-navyCard text-brand-gold text-xs font-semibold px-4 py-2.5 rounded-full border border-brand-gold/40 hover:border-brand-gold transition flex items-center gap-2">
+                    <i class="fa-brands fa-facebook-f"></i> ফেসবুকে পেজ
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-b from-brand-ivory via-white to-brand-ivory">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 px-4 py-1.5 rounded-full text-brand-navy text-xs sm:text-sm font-semibold">
+                        <img src="Gemini_Generated_Image_dp6zjtdp6zjtdp6z.jpg" alt="Emblem" class="w-5 h-5 rounded-full border border-brand-gold">
+                        <span class="font-cinzel text-brand-gold font-bold">EST. 2026</span>
+                        <span class="text-gray-400">•</span>
+                        <span>স্বপ্নের ডিজাইনে কাস্টম কেক ক্যানভাস</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-cinzel text-brand-navy leading-tight">
+                        A Canvas of Flavors in <span class="gold-gradient-text">Every Bite!</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-gray-700 font-bangla max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        আপনার জীবনের যেকোনো বিশেষ দিন বা উৎসবকে রাঙিয়ে তুলতে **The Baker's Palette** নিয়ে এসেছে নান্দনিক ও স্বাদে অনন্য সব আর্ট কেক, মিনিমালিস্ট বেন্টো কেক এবং কাস্টমাইজড ডেজার্ট।
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#calculator" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldHover text-brand-navy font-bold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-calculator"></i> কাস্টম কেক ক্যালকুলেটর
+                        </a>
+                        <a href="https://wa.me/8801938713553" target="_blank" class="w-full sm:w-auto bg-brand-navy hover:bg-brand-navyCard text-white font-semibold px-7 py-3.5 rounded-full border border-brand-gold/40 transition-all flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> সরাসরি কথা বলুন
+                        </a>
+                    </div>
+
+                    <div class="pt-6 border-t border-brand-gold/20 flex items-center justify-center lg:justify-start gap-8 text-xs text-gray-600 font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-brand-gold"></i> ১০০% স্বাস্থ্যকর উপাদান
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check text-brand-gold"></i> নিজস্ব কারিগরি ডিজাইন
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Image Showcase -->
+                <div class="relative flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px]">
+                        <!-- Main Logo Card with Decorative Ring -->
+                        <div class="absolute inset-0 rounded-full border-4 border-dashed border-brand-gold/40 animate-spin-slow"></div>
+                        <div class="w-full h-full rounded-full p-3 bg-white shadow-2xl border-4 border-brand-gold relative">
+                            <img src="Gemini_Generated_Image_dp6zjtdp6zjtdp6z.jpg" alt="The Baker's Palette Official Logo" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -top-4 -right-4 bg-brand-navy text-brand-gold px-4 py-2 rounded-2xl shadow-xl border border-brand-gold/40 text-xs font-bold font-cinzel flex items-center gap-2">
+                            <i class="fa-solid fa-star text-amber-400"></i> Premium Quality
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute -bottom-2 -left-4 bg-white/90 backdrop-blur-md text-brand-navy px-4 py-2.5 rounded-2xl shadow-xl border border-brand-gold/30 text-xs font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-cake-candles text-brand-gold"></i> Custom Orders Open
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Custom Order Calculator Section -->
+    <section id="calculator" class="py-16 bg-brand-navy text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-brand-gold font-cinzel text-xs uppercase tracking-widest font-semibold">Easy Order Generator</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-cinzel text-white">কাস্টম কেক অর্ডার ক্যালকুলেটর</h2>
+                <p class="text-gray-300 font-bangla text-sm max-w-lg mx-auto">
+                    আপনার কেকের ধরন, সাইজ এবং ফ্লেভার সিলেক্ট করুন। সাথে সাথে সম্ভাব্য আনুমানিক দাম জানতে পারবেন এবং এক ক্লিকেই হোয়াটসঅ্যাপে অর্ডার পাঠাতে পারবেন।
+                </p>
+            </div>
+
+            <div class="glass-card bg-brand-navyCard/90 rounded-3xl p-6 sm:p-10 border border-brand-gold/30 shadow-2xl">
+                <form id="cakeCalculatorForm" class="space-y-6">
+                    
+                    <!-- Cake Type -->
+                    <div>
+                        <label class="block text-sm font-semibold text-brand-goldLight mb-2 font-bangla">১. কেকের ধরণ নির্বাচন করুন (Cake Type):</label>
+                        <select id="cakeType" onchange="calculatePrice()" class="w-full bg-brand-navy border border-brand-gold/40 text-white rounded-xl p-3 focus:outline-none focus:border-brand-gold font-bangla">
+                            <option value="bento" data-price="650">মিনিমালিস্ট বেন্টো কেক (Bento Cake)</option>
+                            <option value="birthday" data-price="1200">বার্থডে কেক (Birthday Special)</option>
+                            <option value="anniversary" data-price="1400">অ্যানিভার্সারি কেক (Anniversary Theme)</option>
+                            <option value="custom" data-price="1600">আর্ট ও কাস্টম থিম কেক (Custom Theme)</option>
+                        </select>
+                    </div>
+
+                    <!-- Cake Size -->
+                    <div>
+                        <label class="block text-sm font-semibold text-brand-goldLight mb-2 font-bangla">২. সাইজ / ওজন নির্বাচন করুন (Cake Size):</label>
+                        <select id="cakeSize" onchange="calculatePrice()" class="w-full bg-brand-navy border border-brand-gold/40 text-white rounded-xl p-3 focus:outline-none focus:border-brand-gold font-bangla">
+                            <option value="bento-size" data-multiplier="1">মিনি বেন্টো (~৩০০ গ্রাম)</option>
+                            <option value="1lb" data-multiplier="1.5">১ পাউন্ড (1 Pound)</option>
+                            <option value="2lb" data-multiplier="2.8">২ পাউন্ড (2 Pounds)</option>
+                            <option value="3lb" data-multiplier="4.0">৩ পাউন্ড (3 Pounds)</option>
+                        </select>
+                    </div>
+
+                    <!-- Flavor -->
+                    <div>
+                        <label class="block text-sm font-semibold text-brand-goldLight mb-2 font-bangla">৩. ফ্লেভার পছন্দ করুন (Flavor):</label>
+                        <select id="cakeFlavor" class="w-full bg-brand-navy border border-brand-gold/40 text-white rounded-xl p-3 focus:outline-none focus:border-brand-gold font-bangla">
+                            <option value="Rich Chocolate Fudge">রিচ চকলেট ফাজ (Rich Chocolate Fudge)</option>
+                            <option value="Vanilla Bean Dream">ভ্যানিলা বিন ড্রিম (Vanilla Bean Dream)</option>
+                            <option value="Red Velvet Cream Cheese">রেড ভেলভেট উইথ ক্রিম চিজ (Red Velvet)</option>
+                            <option value="Salted Caramel Buttercream">সল্টেড ক্যারামেল (Salted Caramel)</option>
+                        </select>
+                    </div>
+
+                    <!-- Text on Cake -->
+                    <div>
+                        <label class="block text-sm font-semibold text-brand-goldLight mb-2 font-bangla">৪. কেকের ওপরে যে লেখা থাকবে (Text on Cake):</label>
+                        <input type="text" id="cakeText" placeholder="যেমন: Happy Birthday Tahmid / 1 Year Together" class="w-full bg-brand-navy border border-brand-gold/40 text-white rounded-xl p-3 focus:outline-none focus:border-brand-gold font-bangla">
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div>
+                        <label class="block text-sm font-semibold text-brand-goldLight mb-2 font-bangla">৫. বিশেষ কোনো চাহিদা বা নোট (Special Requests):</label>
+                        <textarea id="cakeNotes" rows="2" placeholder="ডিজাইন সম্পর্কিত কোনো বিশেষ তথ্য বা পছন্দের রঙ জানান..." class="w-full bg-brand-navy border border-brand-gold/40 text-white rounded-xl p-3 focus:outline-none focus:border-brand-gold font-bangla"></textarea>
+                    </div>
+
+                    <!-- Price Estimate Box -->
+                    <div class="bg-brand-navy p-4 rounded-2xl border border-brand-gold/40 flex justify-between items-center">
+                        <div>
+                            <span class="text-xs text-gray-400 font-bangla block">আনুমানিক খরচ (Estimated Price):</span>
+                            <span id="priceDisplay" class="text-2xl sm:text-3xl font-bold font-cinzel text-brand-gold">৳ ৬৫০</span>
+                        </div>
+                        <span class="text-[11px] text-gray-400 font-bangla max-w-[150px] text-right">ডিজাইন কাস্টমাইজেশনের ওপর ভিত্তি করে চূড়ান্ত দাম নির্ধারিত হবে</span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="button" onclick="sendWhatsAppOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition flex items-center justify-center gap-3 text-base sm:text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> হোয়াটসঅ্যাপে অর্ডার কনফার্ম করুন
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-3 mb-12">
+            <span class="text-brand-gold font-cinzel text-xs uppercase tracking-widest font-semibold">Our Portfolio</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-cinzel text-brand-navy">ডিজাইন গ্যালারি (Cake Gallery)</h2>
+            <p class="text-gray-600 font-bangla text-sm max-w-lg mx-auto">
+                আমাদের তৈরি কিছু জনপ্রিয় কেকের ডিজাইন। আপনি চাইলে এই ডিজাইনগুলো থেকেও বেছে নিতে পারেন।
+            </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10 text-xs sm:text-sm font-bangla">
+            <button onclick="filterGallery('all')" class="gallery-btn active bg-brand-navy text-white px-5 py-2 rounded-full border border-brand-navy transition">সব ডিজাইন</button>
+            <button onclick="filterGallery('bento')" class="gallery-btn bg-white text-brand-navy px-5 py-2 rounded-full border border-gray-300 hover:border-brand-gold transition">বেন্টো কেক</button>
+            <button onclick="filterGallery('birthday')" class="gallery-btn bg-white text-brand-navy px-5 py-2 rounded-full border border-gray-300 hover:border-brand-gold transition">বার্থডে</button>
+            <button onclick="filterGallery('anniversary')" class="gallery-btn bg-white text-brand-navy px-5 py-2 rounded-full border border-gray-300 hover:border-brand-gold transition">অ্যানিভার্সারি</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="gallery-item bento bg-white rounded-2xl overflow-hidden border border-brand-gold/20 shadow-md hover:shadow-xl transition group">
+                <div class="relative h-64 overflow-hidden bg-gray-100">
+                    <img src="https://placehold.co/600x600/FAF7F2/0E1B2A?text=Floral+Bento+Cake" alt="Floral Bento Cake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-brand-navy text-brand-gold text-xs px-3 py-1 rounded-full font-bold">Bento</span>
+                </div>
+                <div class="p-5 space-y-2">
+                    <h3 class="font-bold text-lg text-brand-navy font-bangla">ফ্লোরাল মিনিমালিস্ট বেন্টো</h3>
+                    <p class="text-xs text-gray-500 font-bangla">ছোট ও কিউট ডিজাইনে প্রিয়জনের বিশেষ দিনের মিষ্টি চমক।</p>
+                    <a href="https://wa.me/8801938713553?text=I%20want%20to%20order%20Floral%20Bento%20Cake" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:underline pt-2">
+                        <i class="fa-brands fa-whatsapp"></i> এরকম কেক অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="gallery-item birthday bg-white rounded-2xl overflow-hidden border border-brand-gold/20 shadow-md hover:shadow-xl transition group">
+                <div class="relative h-64 overflow-hidden bg-gray-100">
+                    <img src="https://placehold.co/600x600/FAF7F2/0E1B2A?text=Elegant+18th+Cake" alt="18th Birthday Cake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-brand-navy text-brand-gold text-xs px-3 py-1 rounded-full font-bold">Birthday</span>
+                </div>
+                <div class="p-5 space-y-2">
+                    <h3 class="font-bold text-lg text-brand-navy font-bangla">এলিগেন্ট ১৮তম বার্থডে কেক</h3>
+                    <p class="text-xs text-gray-500 font-bangla">স্মুথ বাটারক্রিম ও মিনিমাল আর্টের নিখুঁত সংমিশ্রণ।</p>
+                    <a href="https://wa.me/8801938713553?text=I%20want%20to%20order%20Elegant%2018th%20Birthday%20Cake" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:underline pt-2">
+                        <i class="fa-brands fa-whatsapp"></i> এরকম কেক অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="gallery-item anniversary bg-white rounded-2xl overflow-hidden border border-brand-gold/20 shadow-md hover:shadow-xl transition group">
+                <div class="relative h-64 overflow-hidden bg-gray-100">
+                    <img src="https://placehold.co/600x600/FAF7F2/0E1B2A?text=Calendar+Anniversary+Cake" alt="Anniversary Calendar Cake" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-brand-navy text-brand-gold text-xs px-3 py-1 rounded-full font-bold">Anniversary</span>
+                </div>
+                <div class="p-5 space-y-2">
+                    <h3 class="font-bold text-lg text-brand-navy font-bangla">ক্যালেন্ডার মেমোরি কেক</h3>
+                    <p class="text-xs text-gray-500 font-bangla">বিশেষ তারিখটিকে ক্যালেন্ডারে রেড হার্ট চিহ্নিত কাস্টমাইজেশন।</p>
+                    <a href="https://wa.me/8801938713553?text=I%20want%20to%20order%20Calendar%20Anniversary%20Cake" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:underline pt-2">
+                        <i class="fa-brands fa-whatsapp"></i> এরকম কেক অর্ডার করুন
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-16 bg-brand-gold/10 border-y border-brand-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-brand-gold font-cinzel text-xs uppercase tracking-widest font-semibold">Our Guarantee</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold font-cinzel text-brand-navy">কেন আমাদের বেছে নেবেন?</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-brand-gold/20 shadow-sm text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-gold/10 border border-brand-gold text-brand-gold flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-navy font-bangla">১০০% প্রিমিয়াম উপাদান</h3>
+                    <p class="text-xs text-gray-600 font-bangla">উন্নত মানের বাটার, ইম্পোর্টেড চকোলেট ও ফ্রেশ উপাদান দিয়ে প্রতিটি কেক তৈরি করা হয়।</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-brand-gold/20 shadow-sm text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-gold/10 border border-brand-gold text-brand-gold flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-navy font-bangla">আর্টিসানাল ও কাস্টম ডিজাইন</h3>
+                    <p class="text-xs text-gray-600 font-bangla">আপনার দেওয়া যেকোনো রেফারেন্স ছবি বা থিম হুবহু সুন্দর করে রূপ দেওয়া হয়।</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-brand-gold/20 shadow-sm text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-gold/10 border border-brand-gold text-brand-gold flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-pump-soap"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-navy font-bangla">সম্পূর্ণ হাইজেনিক হোম বেকারি</h3>
+                    <p class="text-xs text-gray-600 font-bangla">সম্পূর্ণ পরিষ্কার ও স্বাস্থ্যকর পরিবেশে নিজস্ব যত্নে বেকিং সম্পন্ন করা হয়।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-brand-navy text-gray-300 pt-16 pb-12 border-t border-brand-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-12 border-b border-gray-800">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full border-2 border-brand-gold overflow-hidden bg-white p-0.5">
+                            <img src="Gemini_Generated_Image_dp6zjtdp6zjtdp6z.jpg" alt="The Baker's Palette Logo" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <span class="font-cinzel text-xl font-bold text-white tracking-wider">THE BAKER'S PALETTE</span>
+                    </div>
+                    <p class="text-sm font-bangla text-gray-400 max-w-md leading-relaxed">
+                        The Baker's Palette (Est. 2026) - শিল্পীর ছোঁয়ায় তৈরি প্রিমিয়াম কাস্টমাইজড কেক ও ডেজার্ট। আপনার প্রতিটি বিশেষ মুহূর্তকে আরও বেশি আনন্দদায়ক করতে আমরা প্রতিশ্রুতিবদ্ধ।
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="space-y-3 font-bangla">
+                    <h4 class="font-bold text-brand-gold font-cinzel text-sm uppercase tracking-wider">দ্রুত লিংক</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">হোম</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition">ডিজাইন পোর্টফোলিও</a></li>
+                        <li><a href="#calculator" class="hover:text-white transition">ক্যালকুলেটর</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition">আমাদের সার্ভিস</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Direct Contact -->
+                <div class="space-y-3 font-bangla">
+                    <h4 class="font-bold text-brand-gold font-cinzel text-sm uppercase tracking-wider">সরাসরি সংযোগ</h4>
+                    <div class="space-y-2 text-xs text-gray-400">
+                        <p class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                            <a href="https://wa.me/8801938713553" target="_blank" class="hover:text-white transition">+880 01938-713553</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-blue-400 text-sm"></i>
+                            <a href="https://www.facebook.com/profile.php?id=61596091855209" target="_blank" class="hover:text-white transition">Facebook Business Page</a>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold text-sm"></i>
+                            <span>ঢাকা, বাংলাদেশ (Home Bakery)</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-500 font-cinzel flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>The Baker's Palette © 2026. All Rights Reserved.</p>
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="https://wa.me/8801938713553" target="_blank" class="text-gray-400 hover:text-emerald-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61596091855209" target="_blank" class="text-gray-400 hover:text-blue-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Price Calculation Logic
+        function calculatePrice() {
+            const cakeTypeSelect = document.getElementById('cakeType');
+            const cakeSizeSelect = document.getElementById('cakeSize');
+            
+            const basePrice = parseFloat(cakeTypeSelect.options[cakeTypeSelect.selectedIndex].getAttribute('data-price')) || 650;
+            const multiplier = parseFloat(cakeSizeSelect.options[cakeSizeSelect.selectedIndex].getAttribute('data-multiplier')) || 1;
+            
+            const estimatedPrice = Math.round(basePrice * multiplier);
+            document.getElementById('priceDisplay').innerText = '৳ ' + estimatedPrice.toLocaleString('bn-BD');
+            return estimatedPrice;
+        }
+
+        // WhatsApp Direct Order Generator
+        function sendWhatsAppOrder() {
+            const cakeType = document.getElementById('cakeType').options[document.getElementById('cakeType').selectedIndex].text;
+            const cakeSize = document.getElementById('cakeSize').options[document.getElementById('cakeSize').selectedIndex].text;
+            const flavor = document.getElementById('cakeFlavor').value;
+            const text = document.getElementById('cakeText').value || 'N/A';
+            const notes = document.getElementById('cakeNotes').value || 'N/A';
+            const price = document.getElementById('priceDisplay').innerText;
+
+            const message = `Hello The Baker's Palette! 🎨🎂\nI would like to place a custom cake order:\n\n` +
+                            `🍰 *Cake Type:* ${cakeType}\n` +
+                            `⚖️ *Size/Weight:* ${cakeSize}\n` +
+                            `😋 *Flavor:* ${flavor}\n` +
+                            `✍️ *Text on Cake:* ${text}\n` +
+                            `📝 *Notes:* ${notes}\n` +
+                            `💰 *Estimated Price:* ${price}\n\n` +
+                            `Please let me know the availability!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/8801938713553?text=${encodedMessage}`, '_blank');
+        }
+
+        // Filter Gallery Items
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-navy', 'text-white');
+                btn.classList.add('bg-white', 'text-brand-navy');
+            });
+
+            event.target.classList.remove('bg-white', 'text-brand-navy');
+            event.target.classList.add('bg-brand-navy', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize Price on Load
+        window.onload = function() {
+            calculatePrice();
+        };
+    </script>
+</body>
+</html>
